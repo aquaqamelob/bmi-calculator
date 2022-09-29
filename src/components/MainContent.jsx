@@ -20,7 +20,7 @@ export default function Main() {
             onChange={(e) => {
               setHeight(e.target.value);
             }}
-            class="block w-full px-5 py-3 text-base text-gray-300 placeholder-gray-300 transition duration-500 ease-in-out transform border-2 border-gray-300 rounded-lg bg-transparent focus:outline-none"
+            class="block w-full px-5 py-3 text-base text-gray-300 placeholder-gray-300 transition duration-500 ease-in-out transform border-2 border-gray-600 rounded-lg bg-transparent focus:outline-none"
           />
         </div>
 
@@ -33,7 +33,7 @@ export default function Main() {
             onChange={(e) => {
               setWeight(e.target.value);
             }}
-            class="block w-full px-5 py-3 text-base text-gray-300 placeholder-gray-300 transition duration-500 ease-in-out transform border-2 border-gray-300 rounded-lg bg-transparent focus:outline-none"
+            class="block w-full px-5 py-3 text-base text-gray-300 placeholder-gray-300 transition duration-500 ease-in-out transform border-2 border-gray-600 rounded-lg bg-transparent focus:outline-none"
           />
         </div>
       </div>

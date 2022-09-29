@@ -7,7 +7,7 @@ function Card({ children, height, weight }) {
     text: "",
     color: "",
   };
-  
+
   if (bmi < 18.5) {
     message.color = "blue";
     message.text = "Underweight";
@@ -24,16 +24,17 @@ function Card({ children, height, weight }) {
 
   return (
     <div className="w-full h-[100vh] flex flex-col gap-4 justify-center items-center px-4 pt-16">
-      <div className="flex flex-col justify-between mx-auto w-full h-[18vh] max-w-md rounded-2xl bg-black/30 p-2 transition">
+      <div className="flex flex-col justify-between mx-auto w-full h-[18vh] max-w-md rounded-2xl bg-black/40 p-2 transition">
         {children}
       </div>
-      <div className="flex flex-col justify-between mx-auto w-full h-[10vh] max-w-md rounded-2xl bg-black/30 p-2 transition">
+      <div className="flex flex-col justify-between mx-auto w-full h-[10vh] max-w-md rounded-2xl bg-black/40 p-2 transition">
         <div className="text-left my-4 mx-2 flex justify-between ">
           <span className="text-2xl font-medium">
-            Your BMI: {bmi ? bmi.toFixed(2) : "Enter values"}
+            Your BMI: {bmi && bmi != Infinity ? bmi.toFixed(2) : ""}
           </span>
-
-          <Badge color={message.color} message={message.text}></Badge>
+          {bmi !== 0 && bmi !== Infinity && (
+            <Badge color={message.color} message={message.text}></Badge>
+          )}
         </div>
       </div>
     </div>

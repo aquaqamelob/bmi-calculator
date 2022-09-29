@@ -2,6 +2,35 @@
   width: 660px;
   height: 660px;
   border-radius: 15rem;
+  background: radial-gradient(
+      62.61% 62.61% at 95.23% 6.02%,
+      #160e71 0%,
+      rgba(19, 13, 92, 0.26) 54.71%,
+      rgba(90, 35, 248, 0) 100%
+    ),
+    linear-gradient(72.48deg, #ef516d 2.61%, rgba(106, 103, 227, 0) 56.18%),
+    radial-gradient(
+      45.23% 45.23% at 35.11% -11.02%,
+      #7936ae 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 94.32% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.6552) 32.29%,
+      rgba(99, 175, 240, 0.3978) 64.06%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(313.04deg, #341d65 0.93%, #604aea 125.68%);
+  background-blend-mode: luminosity, color-dodge, multiply, darken, saturation,
+    color;
+  filter: blur(100px);
+}
+
+.blob2 {
+  width: 440px;
+  height: 440px;
+  border-radius: 15rem;
   background: linear-gradient(180deg, #ef516d 0%, rgba(239, 81, 109, 0) 100%),
     radial-gradient(
       94.51% 124.88% at 94.32% 94.43%,
@@ -11,43 +40,9 @@
       rgba(43, 90, 211, 0) 100%
     ),
     linear-gradient(313.04deg, #341d65 0.93%, #604aea 125.68%);
-  background-blend-mode: screen, darken, color-dodge, overlay, luminosity,
-    saturation;
-  filter: blur(100px);
-}
-
-.blob2 {
-  width: 440px;
-  height: 440px;
-  border-radius: 15rem;
-  background: radial-gradient(
-      ellipse at 50% 50%,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    radial-gradient(ellipse at 70% 60%, #c3e060 0%, rgba(195, 224, 96, 0) 90%),
-    radial-gradient(ellipse at 30% 30%, #c3e060 0%, rgba(195, 224, 96, 0) 60%),
-    radial-gradient(
-      ellipse at bottom left,
-      #00a3cb 0%,
-      rgba(0, 163, 203, 0) 70%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(18, 46, 119, 0) 0%,
-      rgba(18, 46, 119, 0) 75%,
-      #122e77 100%
-    ),
-    linear-gradient(
-      to right,
-      #625793 0%,
-      #d55d64 35%,
-      #e49129 65%,
-      #c0671c 100%
-    );
-  background-blend-mode: screen, luminosity, saturation, darken, color-dodge,
-    color;
-  filter: blur(100px);
+  background-blend-mode: saturation, overlay, lighten, multiply, screen,
+    color-dodge;
+  filter: blur(90px);
 }
 
 * {
