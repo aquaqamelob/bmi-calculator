@@ -15,7 +15,7 @@ export default function Main() {
           <input
             type={"number"}
             min={1}
-            placeholder="Your Height [cm]"
+            placeholder="Height [cm]"
             value={height}
             onChange={(e) => {
               setHeight(e.target.value);
@@ -28,7 +28,7 @@ export default function Main() {
           <input
             type={"number"}
             min={1}
-            placeholder="Your Weight [kg]"
+            placeholder="Weight [kg]"
             value={weight}
             onChange={(e) => {
               setWeight(e.target.value);
