@@ -1,3 +1,3 @@
 # bmi-calculator
 
-https://aquaqamelob.github.io/bmi-calculator
+https://norbertzieba.github.io/bmi-calculator
